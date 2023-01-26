@@ -23,10 +23,10 @@ public class SameName {
 
         System.out.println(
                 employee.name + " " +
-                employee.position + " " +
-                employee.email + " " +
-                employee.phone + " " +
-                employee.age
+                        employee.position + " " +
+                        employee.email + " " +
+                        employee.phone + " " +
+                        employee.age
         );
 
     }

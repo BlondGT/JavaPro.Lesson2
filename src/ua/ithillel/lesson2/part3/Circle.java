@@ -1,15 +1,16 @@
 package ua.ithillel.lesson2.part3;
 
-public class Circle extends Figure implements Area {
+public class Circle implements Figure {
 
+    private final double radius;
 
-    public Circle(double a, double b) {
-        super(a, b);
+    public Circle(double radius) {
+        this.radius = radius;
     }
 
     @Override
-    public double calcSquare(double a, double b) {
-        return (Math.PI * a * a);
+    public double calcArea() {
+        return Math.PI * radius * radius;
     }
 
 }

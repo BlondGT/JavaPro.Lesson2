@@ -1,13 +1,18 @@
 package ua.ithillel.lesson2.part3;
 
-public class Triangle extends Figure implements Area {
+public class Triangle implements Figure {
 
-    public Triangle(double a, double b) {
-        super(a, b);
+    private final double height;
+    private final double base;
+
+    public Triangle(double height, double base) {
+        this.height = height;
+        this.base = base;
     }
 
     @Override
-    public double calcSquare(double a, double b) {
-        return (a * b / 2);
+    public double calcArea() {
+
+        return base * height / 2;
     }
 }

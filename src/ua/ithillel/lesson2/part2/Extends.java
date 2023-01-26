@@ -3,8 +3,8 @@ package ua.ithillel.lesson2.part2;
 public class Extends {
 
     static String name;
-    static String run;
-    static String swim;
+    static double distanceRun;
+    static double distanceSwim;
 
     public static void main(String[] args) {
 
@@ -13,20 +13,20 @@ public class Extends {
     }
 
     private static void getInfoCat() {
-        name = "Murka";
-        run = "200m";
-        swim = "0m";
-        Cat cat = new Cat(run, swim, name);
-        cat.actionRun();
-        cat.actionSwim();
+        name = "Мурка";
+        Cat cat = new Cat(name);
+        distanceRun = 50;
+        cat.actionRun(distanceRun);
+        distanceSwim = 100;
+        cat.actionSwim(distanceSwim);
     }
 
     private static void getInfoDog() {
-        name = "Bobik";
-        run = "500m";
-        swim = "10m";
-        Dog dog = new Dog (run, swim, name);
-        dog.actionRun();
-        dog.actionSwim();
+        name = "Бобік";
+        Dog dog = new Dog(name);
+        distanceRun = 100;
+        dog.actionRun(distanceRun);
+        distanceSwim = 5;
+        dog.actionSwim(distanceSwim);
     }
 }
